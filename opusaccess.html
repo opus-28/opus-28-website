@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpusAccess - Tokenized Investment Opportunities on Canton Ledger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">OpusAccess</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Unlock Tokenized Investment Opportunities</h1>
+            <p>OpusAccess, powered by the Canton Network, provides secure, tokenized access to exclusive investment deals for high-net-worth individuals and institutions.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About OpusAccess</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A service of Opus 28, a premier advisory firm, OpusAccess leverages the technology of the Canton network to offer access to investment opportunities in a tokenized format.</p>
+                    <p>Subscription & rewards denominated in Canton Coins.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Placeholder for image; replace with actual asset -->
+                    <img src="images/logo_opusaccess.jpeg" alt="OpusAccess Platform">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Tokenization</h3>
+                    <p>Utilize DA CN Utilities to tokenize investments, ensuring KYC-verified access and consistent Activity Markers for rewards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Billing & Subscriptions</h3>
+                    <p>Effortless client billing linked to tokenized assets, with rewards generated via integrated Activity Markers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Exclusive Opportunities</h3>
+                    <p>Curated deals for family offices and institutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form action="#" method="POST"> <!-- Integrate with backend as needed -->
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <span>opusaccess@opus-28.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Website:</strong>
+                        <span>opus-28.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Launch:</strong>
+                        <span>Q4 2025</span>
+                    </div>
+                    <p>Ready to explore tokenized investments? We're launching soon on MainNet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">&copy; 2025 Opus 28. All rights reserved.</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission placeholder (integrate with your backend, e.g., via GoDaddy hosting or external service)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We\'ll get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
